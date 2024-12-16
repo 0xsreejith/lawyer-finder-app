@@ -4,7 +4,7 @@ import 'package:lawyer_finder/views/splash_screen.dart';
 
 class AppRoutes {
   static final routes = [
-    GetPage(name: '/', page: () => SplashScreen()),
+    GetPage(name: '/', page: () => const SplashScreen()),
     GetPage(name: '/home', page: () => const HomePage()),
   ];
 }

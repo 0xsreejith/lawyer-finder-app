@@ -13,10 +13,10 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final List<Widget> _pages = [
-    Home(),
-    Search(),
-    Appoinments(),
-    Profile(),
+     Home(),
+    const Search(),
+    const Appoinments(),
+    const Profile(),
   ];
 
   int _selectedIndex = 0;
@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.blueGrey, // Set background color for the navbar
         selectedItemColor: Colors.grey[800], // Color for selected item
         unselectedItemColor: Colors.black54, // Color for unselected items
-        items: [
+        items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
           BottomNavigationBarItem(
